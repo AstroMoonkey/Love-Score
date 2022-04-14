@@ -10,14 +10,11 @@ name2 = input("What is their name? \n")
 
 names = name1.replace(" ","")+ name2.replace(" ","")
 names = names.lower()
-print(type(names))
+# print(type(names))
 true = str(names.count("t") + names.count("r") + names.count("u") + names.count("e"))
 love = str(names.count("l") + names.count("o") + names.count("v") + names.count("e"))
-
 tally = true + love
-
-print(type(tally))
-
+# print(type(tally))
 tally = int(tally)
 if tally < 10 or tally > 90: # **less than 10** or **greater than 90**
   print(f"Your score is {tally}, you go together like coke and mentos.")
